@@ -142,12 +142,14 @@ nav {
   flex-direction: column;
   background-color: #040706;
   position: absolute;
-  top: 30%;
+  border-radius: 0rem 2rem 2rem 0rem;
+
+  padding-right: 10%;
+  top: 12%;
   left: 0;
   right: 0;
-  padding: 1rem;
 }
-
+/* Mobile Of Nav, Header  */
 @media (max-width: 600px) {
   .toggle {
       display: block;
@@ -155,26 +157,86 @@ nav {
 
   nav.show-items {
       display: flex; /* Show the navigation when toggle is active */
-  }
+      color: #ffffff;
+      font-weight: 100;
+      background-color: #ed9339;
+      box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;;
+      width: 30%;
+      margin-top: 0;
 
+  }
+nav li{
+  font-weight: 500;
+}
   nav ul {
       flex-direction: column;
-      gap: 1rem;
   }
 
   header {
       display: flex;
       justify-content: space-between;
-      
     
   }
   
   .hero h1{
-    padding-left: 5rem;
-    line-height: 7rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 4rem;
+    font-size: 3rem;
+    width: 70%;
+    border: #ed9339 solid 2px;
+    padding: 1rem;
+    border-radius: 2rem 2rem 2rem 0rem;
   }
   .hero p{
     display: none;
+  }
+}
+.wedo {
+  background-color: #040706;
+  color: #ffffff;
+  min-height: 50vh; /* Ensures it takes space even if content is minimal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center;
+  padding: 2rem; /* Adds padding for spacing */
+  box-sizing: border-box;
+}
+
+.wedo h1 {
+  margin: 1rem 0;
+  color: #ed9339;
+  font-size: 4rem;
+}
+
+.wedo p {
+  max-width: 80%; /* Prevents overly wide text */
+  margin: auto;
+  border: 2px solid #ed9339;
+  padding: 1rem;
+  border-radius: 0rem 2rem 2rem 2rem;
+  font-size: 1.6rem; /* Ensures readability on smaller screens */
+  line-height: 2.4rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .wedo {
+    min-height: 30vh; /* Adjusts height for smaller screens */
+    padding: 1rem;
+  }
+  
+  .wedo h1 {
+    font-size: 3rem; /* Scales down header size */
+    margin-bottom: 1rem;
+  }
+
+  .wedo p {
+    font-size: 1.4rem; /* Scales down paragraph size */
+    line-height: 2rem;
   }
 }
 
@@ -196,6 +258,7 @@ main{
   background: url(Images/brisket.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -204,5 +267,55 @@ main{
 }
 .hero h1{
   color: #ed9339;
-  font-size: 5rem;
 }
+/* What We Do Section */
+.wedo h1{
+  margin: 0;
+  padding: 0;
+}
+.wedo p{
+  margin: 0;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+/* Who are we Section */
+.whowe{
+  background-color: #040706;
+  height: 60vh;
+}
+.whowe figure{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ font-size: 2rem;
+ padding: 0;
+ margin: 0;
+}
+.whowe figcaption{
+  font-weight: 600;
+  color: #ed9339;
+}
+.whowe img{
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  padding-top: 5rem;
+}
+.whowe p{
+  color: #ffffff;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+/* images Section */
+.images{
+  background-color: #040706;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.images img{
+  width: 150px;
+}
+
