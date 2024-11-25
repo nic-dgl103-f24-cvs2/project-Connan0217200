@@ -1,0 +1,208 @@
+/* Global Style */
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Font family */
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Header style */
+header {
+  background-color: #040706;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+header img {
+  height: 100px;
+  margin-right: 4rem;
+}
+
+nav {
+  color: white;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-right: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.toggle {
+  display: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+
+nav {
+  display: none; /* Initially hide the navigation */
+  flex-direction: column;
+  background-color: #040706;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .toggle {
+      display: block;
+  }
+
+  nav.show-items {
+      display: flex; /* Show the navigation when toggle is active */
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  header {
+      display: flex;
+      justify-content: space-between;
+      
+    
+  }
+  
+  .hero h1{
+    padding-left: 5rem;
+    line-height: 7rem;
+  }
+  .hero p{
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  nav {
+      display: flex; /* Default for larger screens */
+      flex-direction: row;
+      position: static;
+      background-color: transparent;
+      padding: 0;
+  }
+}
+/* Hero section */
+main{
+  margin: 0;
+  padding: 0;
+}
+.hero{
+  background: url(Images/brisket.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.hero h1{
+  color: #ed9339;
+  font-size: 5rem;
+}
