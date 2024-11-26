@@ -284,7 +284,7 @@ main{
 /* Who are we Section */
 .whowe{
   background-color: #040706;
-  height: 70vh;
+  height: 50vh;
 }
 .whowe figure{
   display: flex;
@@ -326,6 +326,7 @@ main{
   border-right:  #ed9339 solid 3px;
   border-radius: 1rem;
 }
+/* Contact Section */
 .contact{
   padding-right: 10%;
   padding-left: 10%;
@@ -347,6 +348,9 @@ form label {
   text-decoration: underline;
   margin: 0;
 }
+.name, .email{
+  font-size: 1.5rem;
+}
 .submit{
   background-color: #ed9339;
   color: white;
@@ -360,16 +364,128 @@ form label {
 }
 footer{
   background-color: #ed9339;
-  text-align: center;
-  display: flex;
 }
-.map{
-  margin: 0;
-  padding: 0;
+.Map{
+  background-color: #040706;
 }
 iframe{
   width: 100%;
   height: 20%;
   filter: invert(100%);
 }
+footer h1{
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+footer{
+  width: 100%;
+  margin: auto;
+}
+@media (max-width: 600px) {
+footer img {
+    width: 20px;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .Footerstyle li{
+    list-style: none;
+    width: 80px;
+    background-color: #87501a;
+    border-radius: 1rem;
+  }
+  .Footerstyle ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80px;
+    font-weight: 500;
+    padding-left: 0;
+
+    color: white;
+    gap: 1rem;
+  }
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  align-items: center;
+}
+footer p{
+  text-align: center;
+  font-size: .8rem;
+  padding: 0;
+  padding-top: 2rem;
+  margin: 0;
+}
+/* ---------------------Menu Page------------------------ */
+.table{
+  width: 100%;
+  margin: auto;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #040706;
+}
+.menu{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.table h1{
+  text-align: center;
+  font-size: 5rem;
+  color: #ed9339;
+}
+.menu th,
+.menu td{
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+  color: #ffffff;
+}
+.menu td{
+  font-size: 1.5rem;
+}
+thead{
+  font-size: 2rem;
+}
+/* --------------------Services------------------- */
+.Service h1{
+  text-align: center;
+  font-size: 5rem;
+  color: #ed9339;
+  line-height: 5rem;
+  padding: 0;
+  margin: 0;
+}
+.Service{
+  background-color: #040706;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+@media (max-width: 600px){
+  .Service img{
+    width: 80%;
+    margin-top: 5rem;
+  }
+  .Service p{
+    font-size: 1.4rem;
+    color: white;
+    width: 80%;
+  }
+  .Service h1{
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+  }
 
