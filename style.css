@@ -230,8 +230,40 @@ section.hero p {
 
 
 @media (min-width: 1200px){
-
-
+  .heromenu h1{
+    color: #ed9339;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 1.5;
+  }
+  .heromenu{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .heroservice h1{
+    color: #ed9339;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 1.5;
+  }
+  .heroservice{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
 
   .hero h1{
     color: #ed9339;
